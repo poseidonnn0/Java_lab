@@ -1,5 +1,5 @@
 # Web
-Repository for web programming lab work / php
+Repository for Java
 <p align="center">
-    <img src="https://www.dariawan.com/media/images/tech-java.width-400.png">
+    <img src="https://pic.onlinewebfonts.com/svg/img_189636.svg">
 </p>
