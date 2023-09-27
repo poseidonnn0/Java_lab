@@ -59,7 +59,6 @@ public class Main
     }
     public static void task1(String str)
     {
-
         if (str == null || str.isEmpty())
         {
             System.out.println("Пустая строка или строка не обнаружена!");
@@ -69,7 +68,7 @@ public class Main
             int sLength = str.length();
             StringBuilder Symbols = new StringBuilder();
             char[] CurSymb = new char[sLength];
-            int i = 0; int j = 0; int result = 0;
+            int i = 0; int j = 0; int result = 0; int start = 0; int end = 0;
             for (int z = 0; z < sLength; z++)
             {
                 CurSymb[z] = str.charAt(z); // заполняем строку в массив чара(по каждому символу)
@@ -87,8 +86,10 @@ public class Main
                     Symbols = new StringBuilder(Symbols.toString().replace(CurSymb[i], ' '));
                     i++;
                 }
+                start = i;
+                end = j;
             }
-            System.out.println(result);
+            System.out.println("Количество повторяющихся символов = " + result + " , где сами символы: " + str.substring(start,end));
         }
     }
     public static void task2(int[] arr1,int[] arr2)
