@@ -28,7 +28,8 @@ public class Main
         switch (num)
         {
             case 1:
-                task1("abacabbbadabacababcdfea");
+                //task1("abbbcnffff");
+                task1("abacabbbadabacababcdfea"); //abbbcnffff
                 break;
             case 2:
                 task2(arr1, arr2);
@@ -68,7 +69,8 @@ public class Main
             int sLength = str.length();
             StringBuilder Symbols = new StringBuilder();
             char[] CurSymb = new char[sLength];
-            int i = 0; int j = 0; int result = 0; int start = 0; int end = 0;
+            int i = 0; int j = 0; int result = 0;
+            int maxLength = 0, start = 0;
             for (int z = 0; z < sLength; z++)
             {
                 CurSymb[z] = str.charAt(z); // заполняем строку в массив чара(по каждому символу)
@@ -80,16 +82,19 @@ public class Main
                     Symbols.append(CurSymb[j]);
                     j++;
                     result = Math.max(result, j - i);
+                    if (j-i > maxLength)
+                    {
+                        maxLength = j-i;
+                        start = i;
+                    }
                 }
                 else
                 {
                     Symbols = new StringBuilder(Symbols.toString().replace(CurSymb[i], ' '));
                     i++;
                 }
-                start = i;
-                end = j;
             }
-            System.out.println("Количество повторяющихся символов = " + result + " , где сами символы: " + str.substring(start,end));
+            System.out.println("Количество повторяющихся символов = " + result + " , где сами символы: " + str.substring(start, start+maxLength));
         }
     }
     public static void task2(int[] arr1,int[] arr2)
