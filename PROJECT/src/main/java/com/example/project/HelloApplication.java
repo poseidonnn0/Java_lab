@@ -23,7 +23,11 @@ public class HelloApplication extends Application
         Scene scene = new Scene(root, 654, 165);
         stage.setScene(scene);
 
+        Image icon = new Image(getClass().getResourceAsStream("icon.png"));
+        stage.getIcons().add(icon);
+
         stage.show();
+        stage.setTitle("MP3-Player_Kondratev_Valeev!");
         stage.setOnCloseRequest(new EventHandler<WindowEvent>()
         {
             @Override
