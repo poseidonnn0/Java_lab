@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="165.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller">
+    <children>
+    <Label fx:id="songLabel" alignment="CENTER" layoutX="0.0" prefHeight="100.0" prefWidth="687.0" text="MP3_Player" textFill="#fb00ff">
+    <font>
+        <Font size="65.0" />
+    </font>
+    </Label>
+    <ProgressBar fx:id="songProgressBar" layoutX="-1.0" layoutY="99.0" prefHeight="18.0" prefWidth="655.0" progress="0.25">
+      <effect>
+        <ColorAdjust hue="0.45" />
+      </effect>
+    </ProgressBar>
+    <Button fx:id="playButton" layoutY="117.0" mnemonicParsing="false" onAction="#playMedia" prefHeight="46.0" prefWidth="85.0" text="PLAY">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Button>
+    <Button fx:id="pauseButton" layoutX="85.0" layoutY="117.0" mnemonicParsing="false" onAction="#pauseMedia" prefHeight="46.0" prefWidth="85.0" text="PAUSE">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Button>
+    <Button fx:id="resetButton" layoutX="170.0" layoutY="117.0" mnemonicParsing="false" onAction="#resetMedia" prefHeight="46.0" prefWidth="85.0" text="RESET">
+      <font>
+        <Font size="18.0" />
+      </font>
+    </Button>
+    </children>
+</AnchorPane>

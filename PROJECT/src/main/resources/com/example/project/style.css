@@ -1,0 +1,68 @@
+
+.label
+{
+    -fx-border-color:#FFFFFF;
+    -fx-border-style:solid;
+    -fx-border-width:0;
+    -fx-background-radius: 3px 3px 0 0;
+    -fx-background-color:  rgba(105, 105, 105, 0.9);
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 35;
+    -fx-text-fill: #00ff00;
+}
+
+.bodybg
+{
+    -fx-background-image: url("BFU.jpg");
+    /*-fx-background-size: 100% 100%;*/
+}
+
+.button{
+
+    -fx-border-color:#FFFFFF;
+    -fx-border-style:solid;
+    -fx-border-width:0;
+    -fx-background-radius: 3px 3px 0 0;
+    -fx-background-color:  rgba(105, 105, 105, 0.9);
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em;
+    -fx-text-fill: #00ff00;
+}
+.button:focused
+{
+    -fx-border-color: transparent, black;
+    -fx-border-width: 1, 1;
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+}
+.button:pressed
+{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+.combo-box
+{
+    -fx-border-color:#000000;
+    -fx-border-style:solid;
+    -fx-border-width:1;
+    -fx-background-radius: 3px 3px 0 0;
+    -fx-background-color:  rgba(105, 105, 105, 0.9);
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1em;
+    -fx-text-fill: #00ff00;
+}
+
+combo-box .arrow{
+    -fx-background-color:rgba(105, 105, 105, 0.9);
+}
+.combo-box .arrow-button{
+    -fx-background-color:rgba(105, 105, 105, 0.9);
+    -fx-text-fill: #00ff00;
+}
+.combo-box .arrow-button{
+    -fx-background-color:rgba(105, 105, 105, 0.9);
+}
+.combo-box .list-cell{
+    -fx-text-fill: #00ff00;
+    -fx-background-color:rgba(105, 105, 105, 0.9);
+}
